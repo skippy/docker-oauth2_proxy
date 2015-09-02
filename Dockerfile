@@ -12,4 +12,4 @@ RUN curl -sL -o oauth2_proxy.tar.gz \
   && chmod +x /bin/oauth2_proxy \
   && rm -r oauth2_proxy*
 
-CMD ["oauth2_proxy"]
+ENTRYPOINT ["oauth2_proxy"]
