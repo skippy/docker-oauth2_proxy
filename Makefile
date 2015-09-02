@@ -7,7 +7,7 @@ build:
 	docker build -t $(NAME):$(VERSION) .
 
 test:
-	docker run --rm $(NAME):$(VERSION) -version
+	docker run $(NAME):$(VERSION) -version
 
 tag_latest:
 	docker tag -f $(NAME):$(VERSION) $(NAME):latest
